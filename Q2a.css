@@ -6,10 +6,13 @@
 .navbar {
     display: flex;
     background-color: green;
+    color: white;
 }
 .navbar .navOptions {
     display: flex;
-    flex-wrap: wrap;
+}
+.runningClub {
+    margin-right: auto;
 }
 
 .navbar a {
@@ -19,7 +22,10 @@
     text-decoration: none;
 }
 .dropdown {
-    overflow: hidden;
+    position: relative;
+    display: inline;
+    float: right;
+
 }
 
 .dropdown .dropbtn {
@@ -35,7 +41,7 @@
 
   .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed; 
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -52,5 +58,7 @@
     background-color: #ddd;
   }
   .dropdown:hover .dropdown-content {
-    display: block;
+    display:block;
+    left: auto;
+    right: 6px;
   }
