@@ -27,7 +27,23 @@
     float: right;
 
 }
-
+.login {
+    font-size: 16px;
+    outline: none;
+    color: white;
+    background-color: rgb(0, 170, 0);
+    padding: 14px 16px;
+    font-family: inherit; 
+    
+}
+.signup {
+    font-size: 16px;
+    outline: none;
+    color: white;
+    background-color: rgb(0, 170, 0);
+    padding: 14px 16px;
+    font-family: inherit; 
+}
 .dropdown .dropbtn {
     font-size: 16px;
     border: none;
