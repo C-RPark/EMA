@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>OU Walking Club Home</title>
+    <meta name="author" content="Connor Park">
+    <link rel="stylesheet" href="Q2a.css">
+    <script src="Q2a.js"></script>
+</head>
+
+
+<body">
+    <div class="navbar">
+        <a class="runningClub"> OU Running Club</a>
+        <button class="login">Login</button>
+        <button class="signup">Sign up</button>
+        <div class="navOptions">
+            <a href="Q2a.html">Home</a>
+            <a href="news.html">News</a>
+            <div class="dropdown">
+                <button class="dropbtn">Admin</button>
+                <div class="dropdown-content">
+                    <a href="editMember.html">Edit Members</a>
+                    <a href="news.html">Add News</a>
+                    <a href="announcement.html">Send Announcement</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <h2 style="text-align: center;">Send Announcement</h2>
+        <div class="center" id="formcontainer">
+            <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="annaouncement1"
+                name="announcement1">
+                <ul class="flex">
+                    <li>
+                        <textarea name="messagebox" id="messagebox" rows="10" cols="50" required maxlength="400"
+                            minlength="10"></textarea>
+                    </li>
+                    <li>
+                        <input type="file" id="file" name="file">
+                    </li>
+                    <li>
+                        <label for="datetosend"> Select the date you wish to send announcement</label>
+                        <input type="date" name="datetosend" id="datetosend" max="2021-12-31" min="2021-05-17">
+                    </li>
+                    <li>
+                        <input type="hidden" name="sessionID" id="sessionID" value="1234abcd-5678-9090-efef">
+                        <button type="submit" name="submit" id="submit"> Send </button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
