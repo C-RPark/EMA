@@ -1,0 +1,183 @@
+ html {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+ }
+
+ .navbar {
+   display: flex;
+   background-color: green;
+   color: white;
+ }
+
+ .navbar .navOptions {
+   display: flex;
+ }
+
+ .navOptions .icon {
+   display: none;
+ }
+
+ .runningClub {
+   margin-right: auto;
+ }
+
+ .navbar a {
+   font-size: 16px;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+
+ .dropdown {
+   position: relative;
+   display: inline;
+   float: right;
+ }
+
+ .login {
+   font-size: 16px;
+   outline: none;
+   color: white;
+   background-color: rgb(0, 170, 0);
+   padding: 14px 16px;
+   font-family: inherit;
+ }
+
+ .signup {
+   font-size: 16px;
+   outline: none;
+   color: white;
+   background-color: rgb(0, 170, 0);
+   padding: 14px 16px;
+   font-family: inherit;
+ }
+
+ .dropdown .dropbtn {
+   font-size: 16px;
+   border: none;
+   outline: none;
+   color: white;
+   padding: 14px 16px;
+   background-color: inherit;
+   font-family: inherit;
+   /* Important for vertical align on mobile phones */
+   margin: 0;
+   /* Important for vertical align on mobile phones */
+ }
+
+ /*hides content of dropdown items*/
+ .dropdown-content {
+   display: none;
+   position: fixed;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+ }
+
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+
+ .dropdown-content a:hover {
+   background-color: #ddd;
+ }
+
+ .dropdown:hover .dropdown-content {
+   display: block;
+   left: auto;
+   right: 6px;
+ }
+
+ /* Style the form so it is center and has no bullet points*/
+
+ .flex {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   flex: 1 0 120px;
+   max-width: 220px;
+   list-style-type: none;
+ }
+
+ .flex li button {
+   margin-left: auto;
+   padding: 8px 16px;
+   border: none;
+   background: green;
+   color: #f2f2f2;
+   text-transform: uppercase;
+   letter-spacing: .09em;
+   border-radius: 2px;
+ }
+
+ .flex li button:hover {
+   background-color: rgb(0, 77, 0);
+ }
+
+ .center {
+   display: flex;
+   justify-content: center;
+ }
+
+ input[type="date"] {
+   background: green;
+   color: rgb(255, 255, 255);
+ }
+
+ .center {
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+ }
+
+ .center textarea {
+   margin: 10px 5px 0;
+ }
+
+ .center label {
+   margin: 10px 5px 0;
+ }
+
+ textarea {
+   max-width: 100%;
+ }
+/*make website reposive for movibile devices*/
+ @media only screen and (max-width: 375px) {
+   /*move h2 item down under nav options*/
+   h2  {
+     position: relative;
+     top: 120px;
+   }
+/*nav options into a column layout*/
+   .navbar .navOptions {
+     flex-direction: column;
+   }
+   /* move signup button to top of navbar*/
+   .signup {
+     max-height: 70px;
+     align-items: baseline;
+   }
+      /* move login button to top of navbar*/
+      .login {
+        max-height: 70px;
+        align-items: baseline;
+      }
+      .dropdown-content {
+        display:block;
+        left: 185px;
+        box-shadow: none;
+      }
+      .flex{
+        position: relative;
+        top: 80px;
+        padding:10px;
+      }
+      textarea{
+        width:100%;
+      }
+ }

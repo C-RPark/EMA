@@ -5,38 +5,39 @@
     <meta charset="UTF-8">
     <title>OU Walking Club Home</title>
     <meta name="author" content="Connor Park">
-    <link rel="stylesheet" href="Q2a.css">
-    <script src="Q2a.js"></script>
+     <!-- Set viewport to ensure this page scales correctly on mobile devices -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Q2b.css">
+    <script src="Q2b.js"></script>
 </head>
 
 
 <body">
-    <div class="navbar">
+    <div class="navbar" id = myNavbar>
         <a class="runningClub"> OU Running Club</a>
         <button class="login">Login</button>
         <button class="signup">Sign up</button>
         <div class="navOptions">
-            <a href="Q2a.html">Home</a>
-            <a href="news.html">News</a>
+            <a href="Q2b.html">Home</a>
+            <a href="news_b.html">News</a>
             <div class="dropdown">
-                <button class="dropbtn">Admin</button>
-                <div class="dropdown-content">
-                    <a href="editMember.html">Edit Members</a>
-                    <a href="news.html">Add News</a>
-                    <a href="announcement.html">Send Announcement</a>
+                <button class="dropbtn" id="ddb">Admin</button>
+                <div class="dropdown-content" id="ddc">
+                    <a href="editMember_b.html">Edit Members</a>
+                    <a href="news_b.html">Add News</a>
+                    <a href="announcement_b.html">Send Announcement</a>
                 </div>
             </div>
         </div>
     </div>
     <main>
-        <h2 style="text-align: center;">Send Announcement</h2>
+        <h2 style="text-align: center;" id="title">Send Announcement</h2>
         <div class="center" id="formcontainer">
             <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="annaouncement1"
                 name="announcement1">
                 <ul class="flex">
                     <li>
-                        <textarea name="messagebox" id="messagebox" rows="10" cols="50" required maxlength="400"
-                            minlength="10"></textarea>
+                        <textarea name="messagebox" id="messagebox" rows="10" cols="50" required maxlength="400" minlength="10"></textarea>
                     </li>
                     <li>
                         <input type="file" id="file" name="file">
