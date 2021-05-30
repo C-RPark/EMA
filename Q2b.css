@@ -1,14 +1,15 @@
+ /*default font and size for page*/
  html {
    font-family: Arial, Helvetica, sans-serif;
    font-size: 16px;
  }
-
+/* default nav stlye*/
  .navbar {
    display: flex;
    background-color: green;
    color: white;
  }
-
+/* allows nav bar to be reponsive*/
  .navbar .navOptions {
    display: flex;
  }
@@ -16,24 +17,24 @@
  .navOptions .icon {
    display: none;
  }
-
+/* sets OU walking club text to te left side*/
  .runningClub {
    margin-right: auto;
  }
-
+/* style for nav options*/
  .navbar a {
    font-size: 16px;
    text-align: center;
    padding: 14px 16px;
    text-decoration: none;
  }
-
+/* position of dropdown*/
  .dropdown {
    position: relative;
    display: inline;
    float: right;
  }
-
+/* login button style*/
  .login {
    font-size: 16px;
    outline: none;
@@ -42,7 +43,7 @@
    padding: 14px 16px;
    font-family: inherit;
  }
-
+/* signup button styling*/
  .signup {
    font-size: 16px;
    outline: none;
@@ -51,7 +52,7 @@
    padding: 14px 16px;
    font-family: inherit;
  }
-
+/* sets default style to dropdown menu*/
  .dropdown .dropbtn {
    font-size: 16px;
    border: none;
@@ -74,7 +75,7 @@
    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
    z-index: 1;
  }
-
+/* sets default style to dropdown menu contents*/
  .dropdown-content a {
    color: black;
    padding: 12px 16px;
@@ -82,11 +83,11 @@
    display: block;
    text-align: left;
  }
-
+/* sets background of button when mouse is hovering*/
  .dropdown-content a:hover {
    background-color: #ddd;
  }
-
+/* displays dropdown content when hovering with mouse*/
  .dropdown:hover .dropdown-content {
    display: block;
    left: auto;
@@ -103,7 +104,7 @@
    max-width: 220px;
    list-style-type: none;
  }
-
+/* Styles submit button*/
  .flex li button {
    margin-left: auto;
    padding: 8px 16px;
@@ -118,21 +119,16 @@
  .flex li button:hover {
    background-color: rgb(0, 77, 0);
  }
-
- .center {
-   display: flex;
-   justify-content: center;
- }
-
- input[type="date"] {
-   background: green;
-   color: rgb(255, 255, 255);
- }
-
+/* makes announcement options resposinve and centered to page*/
  .center {
    display: flex;
    flex-flow: row wrap;
-   align-items: center;
+   justify-content: center;
+ }
+/* changes date icons colour*/
+ input[type="date"] {
+   background: green;
+   color: rgb(255, 255, 255);
  }
 
  .center textarea {
@@ -181,3 +177,4 @@
         width:100%;
       }
  }
+
